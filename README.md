@@ -1,6 +1,6 @@
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/bitnami)](https://artifacthub.io/packages/search?repo=bitnami)
-
 # The Bitnami Library for Kubernetes
+
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/bitnami)](https://artifacthub.io/packages/search?repo=bitnami)
 
 Popular applications, provided by [Bitnami](https://bitnami.com), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm).
 
@@ -17,6 +17,9 @@ $ helm install my-release bitnami/<chart>
 ## Before you begin
 
 ### Prerequisites
+
+Please refer to the [Helm Version Support Policy](https://helm.sh/docs/topics/version_skew/) for the maximum version skew supported between Helm and Kubernetes.
+
 - Kubernetes 1.12+
 - Helm 3.1.0
 
@@ -54,11 +57,12 @@ Once you have installed the Helm client, you can deploy a Bitnami Helm Chart int
 Please refer to the [Quick Start guide](https://helm.sh/docs/intro/quickstart/) if you wish to get running in just a few commands, otherwise the [Using Helm Guide](https://helm.sh/docs/intro/using_helm/) provides detailed instructions on how to use the Helm client to manage packages on your Kubernetes cluster.
 
 Useful Helm Client Commands:
-* View available charts: `helm search repo`
-* Install a chart: `helm install my-release bitnami/<package-name>`
-* Upgrade your application: `helm upgrade`
 
-# License
+- View available charts: `helm search repo`
+- Install a chart: `helm install my-release bitnami/<package-name>`
+- Upgrade your application: `helm upgrade`
+
+## License
 
 Copyright (c) 2015-2021 Bitnami
 
@@ -66,7 +70,9 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    https://www.apache.org/licenses/LICENSE-2.0
+```cmd
+https://www.apache.org/licenses/LICENSE-2.0
+```
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,

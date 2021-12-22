@@ -7,6 +7,7 @@ Any type of contribution is welcome; from new features, bug fixes, documentation
 ## How to Contribute
 
 1. Fork this repository, develop, and test your changes.
+    - **Tips**: Use Git to [sparsly download the required chart](https://stackoverflow.com/a/52269934/3104587) [[1](https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/)] only if you wish to locally develop and deploy some particular charts.
 2. Submit a pull request.
 
 ***NOTE***: To make the Pull Requests' (PRs) testing and merging process easier, please submit changes to multiple charts in separate PRs.
@@ -14,6 +15,7 @@ Any type of contribution is welcome; from new features, bug fixes, documentation
 ### Technical Requirements
 
 When submitting a PR make sure that it:
+
 - Must pass CI jobs for linting and test the changes on top of different k8s platforms. (Automatically done by the Bitnami CI/CD pipeline).
 - Must follow [Helm best practices](https://helm.sh/docs/chart_best_practices/).
 - Any change to a chart requires a version bump following [semver](https://semver.org/) principles. This is the version that is going to be merged in the GitHub repository, then our CI/CD system is going to publish in the Helm registry a new patch version including your changes and the latest images and dependencies.
@@ -39,6 +41,7 @@ When submitting a PR make sure that it:
 ### Adding a new chart to the repository
 
 There are three major technical requirements to add a new Helm chart to our catalog:
+
 - The chart should use Bitnami based container images. If they don't exist, you can [open a GitHub issue](https://github.com/bitnami/charts/issues/new/choose) and we will work together to create them.
 - Follow the same structure/patterns that the rest of the Bitnami charts (you can find a basic scaffolding in the [`template` directory](https://github.com/bitnami/charts/tree/master/template)) and the [Best Practices for Creating Production-Ready Helm charts](https://docs.bitnami.com/tutorials/production-ready-charts/) guide.
 - Use an [OSI approved license](https://opensource.org/licenses) for all the software.
